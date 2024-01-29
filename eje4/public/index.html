@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col pt-5">
+                <h1>Menus</h1>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-lg-4">
+                <h2 class="py-3">Agregar Menú</h2>
+                <form action="/api/nuevoMenu" method="post" id="formAgregar" class="py-2">
+                    <div class="mb-3">
+                        <label for="numero" class="form-label">Número del menú</label>
+                        <input type="number" class="form-control" id="numero" name="numero" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="entrada" class="form-label">Entrada</label>
+                        <input type="text" class="form-control" id="entrada" name="entrada" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="principal" class="form-label">Principal</label>
+                        <input type="text" class="form-control" id="principal" name="principal" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="postre" class="form-label">Postre</label>
+                        <input type="text" class="form-control" id="postre" name="postre" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="precio" class="form-label">Precio</label>
+                        <input type="number" class="form-control" id="precio" name="precio" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4">
+                <h2 class="py-3">Editar Menú</h2>
+                <form action="/api/editarMenu" id="formEditar" class="py-2">
+                    <div class="mb-3">
+                        <label for="editarNumero" class="form-label">Número del menú</label>
+                        <input type="number" class="form-control" id="editarNumero" name="numero" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editarEntrada" class="form-label">Entrada</label>
+                        <input type="text" class="form-control" id="editarEntrada" name="entrada" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editarPrincipal" class="form-label">Principal</label>
+                        <input type="text" class="form-control" id="editarPrincipal" name="principal" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editarPostre" class="form-label">Postre</label>
+                        <input type="text" class="form-control" id="editarPostre" name="postre" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editarPrecio" class="form-label">Precio</label>
+                        <input type="number" class="form-control" id="editarPrecio" name="precio" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary" onclick="editarMenu()">Editar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4">
+                <h2 class="py-3">Borrar Menú</h2>
+                <form action="/api/borrarMenu" id="formBorrar" class="py-2">
+                    <div class="mb-3">
+                        <label for="borrarNumero" class="form-label">Número del menú</label>
+                        <input type="number" class="form-control" id="borrarNumero" name="numero" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary" onclick="borrarMenu()">borrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-lg-6">
+                <div class=""></div>
+                <ul class="list-group" id="listaMenus">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="peticiones.js"></script>
+</body>
+</html>

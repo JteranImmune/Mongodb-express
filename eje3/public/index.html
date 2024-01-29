@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col pt-5">
+                <h1>Lista de Series</h1>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-lg-6">
+                <form action="/api/serie" method="get" id="formBuscar" class="py-2">
+                    <div class="input-group">
+                        <input type="text" id="tituloSerie" name="tituloSerie" class="form-control" placeholder="Buscar serie">
+                        <button type="submit" class="btn btn-secondary" id="botonBuscar">Buscar</button>
+                    </div>
+                </form>
+                <form action="/api/nuevaSerie" method="post" id="formAgregar" class="py-2">
+                    <div class="input-group">
+                        <input type="text" id="titulo" name="titulo" class="form-control" placeholder="Titulo">
+                        <input type="text" id="plataforma" name="plataforma" class="form-control" placeholder="Plataforma">
+                        <input type="text" id="nota" name="nota" class="form-control" placeholder="Nota">
+                        <button type="submit" class="btn btn-secondary" id="botonAgregar">Agregar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col-lg-6">
+                <div class=""></div>
+                <ul class="list-group" id="listaSeries">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="peticiones.js"></script>
+</body>
+</html>
