@@ -1,0 +1,33 @@
+[
+    {
+        "tamano": "grande",
+        "color": "rojo",
+        "material": "Madera",
+        "patas": 4 
+    },{
+        "tamano": "mediana",
+        "color": "amarillo",
+        "material": "Madera",
+        "patas": 2 
+    },{
+        "tamano": "pequena",
+        "color": "azul",
+        "material": "hierro",
+        "patas": 3 
+    },{
+        "tamano": "mediana",
+        "color": "verde",
+        "material": "plastico",
+        "patas": 6 
+    },{
+        "tamano": "grande",
+        "color": "negro",
+        "material": "Madera",
+        "patas": 6 
+    },{
+        "tamano": "extra grande",
+        "color": "blanco",
+        "material": "plastico",
+        "patas": 4 
+    }
+]

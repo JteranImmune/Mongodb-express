@@ -1,0 +1,19 @@
+[
+    {
+        "titulo": "100 años de soledad",
+        "estado": "sin leer" 
+    },{
+        "titulo": "El poder del ahora",
+        "estado": "leído" 
+    },{
+        "titulo": "Un curso de milagros",
+        "estado": "sin leer" 
+    },{
+        "titulo": "El coronel no tiene quien le escriba",
+        "estado": "leído"
+ 
+    },{
+        "titulo": "Memorias",
+        "estado": "sin leer" 
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "numero": 25,
+        "entrada": "sopa", 
+        "principal": "salmon", 
+        "postre": "torta", 
+        "precio": 12 
+    },
+    {
+        "numero": 32,
+        "entrada": "ensalada", 
+        "principal": "ternera", 
+        "postre": "helado", 
+        "precio": 15 
+    },
+    {
+        "numero": 42,
+        "entrada": "empanada", 
+        "principal": "pollo", 
+        "postre": "galletas", 
+        "precio": 10 
+    },
+    {
+        "numero": 25,
+        "entrada": "pan", 
+        "principal": "alitas", 
+        "postre": "cafe", 
+        "precio": 10 
+    }
+]

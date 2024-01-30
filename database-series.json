@@ -1,0 +1,20 @@
+[
+    {
+        "titulo": "Castelvania",
+        "plataforma": "Netflix",
+        "nota": 4 
+    },{
+        "titulo": "Breaking Bad",
+        "plataforma": "HBO",
+        "nota": 5 
+    },{
+        "titulo": "What if...",
+        "plataforma": "Disney",
+        "nota": 3
+    },{
+        "titulo": "Blue eyes Samurai",
+        "plataforma": "Netflix",
+        "nota": 5
+    }
+
+]
